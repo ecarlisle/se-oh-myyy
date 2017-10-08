@@ -1,0 +1,519 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400|Roboto:400,700|Roboto+Slab|Montserrat:500|Exo+2" rel="stylesheet">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="tmar2">
+					<div class="flex space-around bordered align-center">
+						<div>
+							<h1 style="margin-bottom: 0.3em">
+								S-E-"Oh Myyy"
+							</h1>
+							<h2>
+								Using Structured, Semantic Data for Stellar Content
+							</h2>
+						</div>
+						<img src="img/takei-emoji.png" class="takei-emoji" />
+					</div>
+
+				</section>
+				<section>
+					<header>
+						<h1>
+							Who's Presenting?
+						</h1>
+					</header>
+					<main>
+						<img class="profile" src="img/eric-carlisle.jpg" />
+						<h2>This Guy... and No One Else.</h2>
+						<div class="fragment" data-fragment-index="0">
+							<ul class="styleless">
+								<li>
+									<a href="http://www.ericcarlisle.com" target="_blank">Eric Carlisle : UI Developer, UX Designer</a>
+								</li>
+								<li>
+									<a href="http://www.ericcarlisle.com" target="_blank">www.ericcarlisle.com</a>
+								</li>
+								<li>
+									<a href="mailto:eric@ericcarlisle.com">eric@ericcarlisle.com</a	>
+								</li>
+								<li>
+									<a href="https://twitter.com/eric_carlisle" target="_blank">@eric_carlisle</a>
+								</li>
+							</ul>
+						</div>
+					</main>
+				</section>
+				<section>
+					<header>
+						<h1>
+							Who's Presenting?
+						</h1>
+					</header>
+					<main>
+						<img class="profile" src="img/eric-carlisle.jpg" />
+						<h2>This Guy... and No One Else.</h2>
+<pre><code class="json">{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Eric Carlisle",
+  "givenName": "Eric",
+  "familyName": "Carlisle",
+  "email": "eric@ericcarlisle.com",
+  "image": "http://www.ericcarlisle.comimg/global/eric-carlisle-800x800.png",
+  "jobTitle": "UI Developer, UX Designer",
+  "url": "http://www.ericcarlisle.com",
+  "sameAs" : [
+    "https://twitter.com/eric_carlisle",
+    "https://www.linkedin.com/in/ericcarlisle",
+    "https://github.com/ecarlisle",
+    "https://www.slideshare.net/ericcarlisle",
+    "https://medium.com/@eric_carlisle"
+  ]
+}</code></pre>
+					</main>
+				</section>
+				<section>
+					<header>
+						<h1>
+							Why are We Here? (not rhetoric)
+						</h1>
+					</header>
+					<main>
+						<ul class="tmar1">
+							<li>A Brief History of Web Metadata</li>
+							<li>The Schema.org Vocabulary</li>
+							<li>How do I use it?</li>
+							<li>Why should I use it?</li>
+							<li>What's the rub?</li>
+						</ul>
+					</main>
+				</section>
+
+
+				<section>
+					<header class="flex space-between align-center title">
+						<h1>
+							A Brief History of Web Metadata
+						</h1>
+						<img src="img/facepalm.gif" class="picard-clap" />
+					</header>
+					<main>
+					</main>
+				</section>
+
+
+				<section>
+					<header>
+						<h1>
+							Way back when...
+						</h1>
+					</header>
+					<main>
+<div>The Yo-Yo Page...</div>
+<pre><code class="html">&lt;html&gt;
+  &lt;/head&gt;
+    &lt;meta name="keywords" content="yo-yo, axle, string, finger, play, gravity, exploit" /&gt;
+    &lt;meta name="description"
+       content="A Yo-Yo is a toy with a string. You unroll, gravity happens and...
+                Was that 160 characters already?"/&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;The Yo-Yo&lt;/h1&gt;
+    &lt;p&gt;
+      A Yo-yo is a toy consisting of an axle connected to two disks, and a string looped
+      around the axle. It has some similarties to a slender spool. A Yo-yo is played by
+      holding the free end of the string known as the handle, allowing gravity to spin
+      the yo-yo and unwind the string. The player then allows the yo-yo to wind itself back
+      to the player's hand, exploiting its spin.
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+						</ul>
+					</main>
+				</section>
+				<section>
+					<header>
+						<h1>
+							This was Tough!
+						</h1>
+					</header>
+					<main>
+						<h3>Questions</h3>
+						<ul class="width-100">
+							<li>Did the metadata represent the content or sabotage it?</li>
+							<li>Was context lost in the summary?</li>
+							<li>Was I distracting users with keyword overload in the content?</li>
+							<li>Can i do any of this better? How?</li>
+						</ul>
+						<br/><br/>
+						<h3>Results</h3>
+						<ul class="width-100">
+							<li>Wait and see...</li>
+							<li>Trial and error. Rinse and repeat.</li>
+						</ul]>
+
+
+					</main>
+				</section>
+
+				<section>
+					<header>
+						<h1>
+							And then...
+						</h1>
+					</header>
+					<main class="flex space-between">
+						<ul>
+							<li>The Open Graph Protocol</li>
+							<li>Meta was more specific, relational</li>
+							<li>Queries via a Social Graph</li>
+						</ul>
+						<div>
+							<img src="img/kevin-bacon.jpg" class="bordered-all" />
+							<div class="small center">
+								<em>"Lieutenant Bacon, set phasers to Footloose!"</em>
+							</div>
+						</div>
+					</main>
+				</section>
+
+				<section>
+					<header>
+						<h1>
+							But With That...
+						</h1>
+					</header>
+					<main class="center">
+						<img src="img/piece-of-action.jpg" class="piece-of-action bordered-all" />
+					</main>
+					<div class="fragment center" data-fragment-index="0">
+						<div>
+							<em class="small">"Well Spock, looks like everyone else wants <strong>A Piece of the Action</strong>."</em>
+						</div>
+						<div class="center tmar1">
+							<a class=" small" href="https://gist.github.com/ecarlisle/c8228a989216a45beb2faaa4943ec03c" target="_blank">My Website &lt;head&gt;</a>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<header>
+						<h1>
+							Apocryphal Einstein on KISS
+						</h1>
+					</header>
+					<main class="flex space-around">
+						<div>
+							<blockquote>
+								"Insanity is doing the same thing over and over again and expecting different results."
+							</blockquote>
+							<blockquote class="fragment" data-fragment-index="0">
+								“It can scarcely be denied that the supreme goal of all theory is to make the irreducible basic elements as simple and as few as possible without having to surrender the adequate representation of a single datum of experience.”
+							</blockquote>
+							<blockquote class="fragment" data-fragment-index="1">
+								Everything should be made as simple as possible, but not simpler.
+							</blockquote>
+						</div>
+						<img class="bordered-all einstein" src="img/einstein.jpg" />
+					</main>
+				</section>
+
+				<section>
+					<header class="flex space-between align-center title">
+						<h1>
+							Schema.org
+						</h1>
+						<img src="img/picard-clap.gif" class="picard-clap" />
+					</header>
+					<main>
+					</main>
+				</section>
+				<section>
+					<header>
+						<h1>
+							Schema.org is...
+						</h1>
+					</header>
+					<main>
+						<h3 class="center">Founded By:</h3>
+						<div class="flex space-around" style="background: #fff; border-radius: 0.5em">
+							<img class="company-logo" src="img/google.png" />
+							<img class="company-logo" src="img/microsoft.png" />
+							<img class="company-logo" src="img/youtube.png" />
+							<img class="company-logo" src="img/yandex.png" />
+						</div>
+						<div>
+							<ul class="tmar2">
+								<li>
+									A <strong class="gold">relational</strong> vocabulary used for <strong class="gold">detailed</strong>, <strong class="gold">precise</strong>, <strong class="gold">contextual</strong> metadata.
+								</li>
+								<li>
+									Used for many encodings, including <strong class="gold">RDFa</strong>, <strong class="gold">Microdata</strong>, and <strong class="gold">JSON-LD</strong>.
+								</li>
+								<li>
+									Used by <strong class="gold">over 10 million sites</strong> for markup their web pages and email messages.
+								</li>
+								<li>
+									Also used for application integration, especially with <strong class="gold">mobile</strong>.
+								</li>
+							</ul>
+						</div>
+					</main>
+				</section>
+				<section>
+					<header>
+						<h1>
+							Schema.org Common Vocabulary
+						</h1>
+					</header>
+					<main>
+						<ul>
+							<li><strong>Thing</strong> &gt; <strong>Action</strong> <span class="small iblock lmar1">(Taxonomy Base)</span></li>
+							<li>&gt; <strong>Person</strong></li>
+							<li>&gt; <strong>Location</strong></li>
+							<li>&gt; Creative Work &gt; <strong>Review</strong></li>
+							<li>&gt; Creative Work &gt; Media Object &gt; <strong>ImageObject</strong></li>
+							<li>&gt; Creative Work &gt; Article &gt; Social Media Posting &gt; <strong>BlogPosting</strong></li>
+							<li>&gt; Intangible &gt; Enumeration &gt; <strong>Flight</strong></li>
+						</ul>
+						<div class="small">
+							<em>
+								<a href="http://schema.org/docs/full.html" target="_blank">
+									Full Schema.org Hierarchy
+								</a>
+							</em>
+						</div>
+					</main>
+				</section>
+				<section>
+					<header>
+						<h1>
+							Schema.org Encoding Example (figure)
+						</h1>
+					</header>
+					<main>
+						<h3>Initial HTML</h3>
+<pre><code class="html">&lt;figure&gt;
+  &lt;img src="http://www.ericcarlisle.comimg/logo.png" alt="Logo" /&gt;
+  &lt;figcaption&gt;Eric Carlisle's Logo&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+						<h3 class="tmar1">Microdata</h3>
+<pre><code class="html">&lt;figure itemscope itemtype="http://schema.org/ImageObject"&gt;
+  &lt;img itemprop="contentUrl" src="http://www.ericcarlisle.comimg/logo.png" alt="Logo" /&gt;
+  &lt;meta itemprop="width" content="600"&gt;
+  &lt;meta itemprop="height" content="100"&gt;
+  &lt;figcaption itemprop="caption"&gt;Eric Carlisle's Logo&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+					</main>
+				</section>
+				<section>
+					<header>
+						<h1>
+							Schema.org Encoding Example (figure)
+						</h1>
+					</header>
+					<main>
+						<h3>RDFa</h3>
+<pre><code class="html">&lt;figure vocab="http://schema.org/" typeof="ImageObject"&gt;
+  &lt;img property="contentUrl" src="http://www.ericcarlisle.comimg/logo.png" alt="Logo" /&gt;
+  &lt;meta property="width" content="600"&gt;
+  &lt;meta property="height" content="100"&gt;
+  &lt;figcaption property="caption"&gt;Eric Carlisle's Logo&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+						<h3 class="tmar1">JSON-LD</h3>
+<pre><code class="json">{
+  "@context": "http://schema.org",
+  "@type": "ImageObject",
+  "author": "Jane Doe",
+  "contentUrl": "http://www.ericcarlisle.comimg/logo.png",
+  "width": 600,
+  "height": 100,
+  "caption": "Eric Carlisle's Logo",
+
+}</code></pre>
+					</main>
+				</section>
+				<section>
+					<header>
+						<h1>
+							Schema.org Encoding Example - Person
+						</h1>
+					</header>
+					<main>
+<pre><code class="json">{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Eric Carlisle",
+  "givenName": "Eric",
+  "familyName": "Carlisle",
+  "email": "eric@ericcarlisle.com",
+  "image": "http://www.ericcarlisle.comimg/global/eric-carlisle-800x800.png",
+  "jobTitle": "UI Developer, UX Designer",
+  "url": "http://www.ericcarlisle.com",
+  "sameAs" : [
+    "https://twitter.com/eric_carlisle",
+    "https://www.linkedin.com/in/ericcarlisle",
+    "https://github.com/ecarlisle",
+    "https://www.slideshare.net/ericcarlisle",
+    "https://medium.com/@eric_carlisle"
+  ]
+}</code></pre>
+<div class="small"><em>(Can be the covers in either &lt;head&gt; or &lt;body&gt;)</em></div>
+					</main>
+				</section>
+				<section>
+					<header>
+						<h1>
+							Schema.org Encoding Example - BlogPosting
+						</h1>
+					</header>
+					<div class="center">
+						<main>
+							<img src="img/blogpost.png" class="blogpost">
+						</main>
+						<em class="iblock small">
+							<a href="https://gist.github.com/ecarlisle/7ea2875746cdc4b9e8a6c3aace5e6e94">
+								Source Code
+							</a>
+						</em>
+					</div>
+				</section>
+				<section>
+					<header class="flex space-between align-center title">
+						<h1>
+							Why Should I use it?
+						</h1>
+						<img src="img/why.gif" />
+					</header>
+					<main>
+					</main>
+				</section>
+				<section>
+					<header>
+						<h1>
+							Search Result Coolness
+						</h1>
+					</header>
+					<main class="center">
+						<img src="img/zappos.png" class="zappos" />
+						<div>
+							<strong>SearchAction</strong> is used with <strong>Website</strong>
+						</div>
+						<a class="small tmar1 iblock" href="https://developers.google.com/search/docs/guides/search-gallery" target="_blank">
+							Google Structured Data Search Gallery
+						</a>
+					</main>
+				</section>
+				<section>
+					<header>
+						<h1 class="flex space-between">
+							<span>Great Documentation and Tooling!</span>
+						</h1>
+					</header>
+					<main>
+						<ul>
+							<li>
+								<a href="https://developers.google.com/search/docs/guides/" target="_blank">Google Structured Data Documentation</a>
+							</li>
+							<li>
+								<strong>
+									<a href="https://search.google.com/structured-data/testing-tool" target="_blank">Google Structured Data Testing Tool!</a>
+								</strong>
+							</li>
+							<li>
+								<a href="https://www.bing.com/toolbox/markup-validator" target="_blank">Bing Markup Validator</a>
+							</li>
+							<li>
+								<a href="https://www.bing.com/webmaster/help/marking-up-your-site-with-structured-data-3a93e731" target="_blank">Bing Structured Data Overview</a>
+							</li>
+							<li>
+								<a href="https://webmaster.yandex.com/tools/microtest/" target="_blank">Yandex Structured Data Validator</a>
+							</li>
+						</ul>
+					</main>
+				</section>
+				<section>
+					<header>
+						<h1>
+							Ok, FINALLY! Why the Star Trek theme?
+						</h1>
+					</header>
+					<main>
+						<h3>Google is building the Star Trek computer!</h3>
+						<ul class="bmar1">
+							<li class="small">
+								<a href="https://www.nytimes.com/2016/09/29/technology/google-assistant.html" target="_blank"><strong>NY Times</strong> - Sept. 28, 2016 : A High-Stakes Bet: Turning Google Assistant Into a ‘Star Trek’ Computer</a>
+							</li>
+							<li class="small">
+								<a href="http://www.slate.com/articles/technology/technology/2013/04/google_has_a_single_towering_obsession_it_wants_to_build_the_star_trek_computer.html" target="_blank"><strong>Slate</strong> - Apr. 11, 2013 : Where No Search Engine Has Gone Before</a>
+							</li>
+						</ul>
+						<div class="flex">
+							<div style="flex-grow: 1; flex-shrink: 1">
+								<h3 class="center">Where we were forever...</h3>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/AWwaN5lQR7E?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="lfloat"></iframe>
+							</div>
+							<div style="flex-grow: 1; flex-shrink: 1">
+								<h3 class="center">Where we are...</h3>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/iMYpONFEy7o?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen class="rfloat"></iframe>
+							</div>
+							<div style="flex-grow: 1; flex-shrink: 1">
+								<h3 class="center">Where we'll be in...</h3>
+								<div  class="center" style="color: #6d8bb2; font-size: 5em">?</div>
+							</div>
+						</div>
+						<div class="fragment center" data-fragment-index="0">
+							SEO? Maybe Automation &amp; Personalization too!
+						</div>
+					</main>
+				</section>
+				<section>
+					<header>
+						<h1>
+							And... What's the Rub?
+						</h1>
+					</header>
+					<main class="center tmar3">
+						<div class="flex space-around">
+							<h3>schema.org</h3>
+							<h3>Microdata</h3>
+							<h3>RDFa</h3>
+							<h3>JSON-LD</h3>
+						</div>
+						<h2 class="tmar2 center"><strong>ARE ALL STANDARDS!</strong></h2>
+						<div class="small tmar1">(mileage may vary)</div>
+						<div class="fragment" data-fragment-index="0">
+							<div class="flex space-around tmar3" style="background: #fff; border-radius: 0.5em">
+								<img class="company-logo" src="img/google.png" />
+								<img class="company-logo" src="img/microsoft.png" />
+								<img class="company-logo" src="img/youtube.png" />
+								<img class="company-logo" src="img/yandex.png" />
+							</div>
+						</div>
+					</main>
+				</section>
+				<section>
+					<main class="tmar1 center">
+						<img src="img/ohmy.png" />
+					</main>
+				</section>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34545855-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments)};
+	  gtag('js', new Date());
+	  gtag('config', 'UA-34545855-1');
+	</script>
+	</body>
+</html>
